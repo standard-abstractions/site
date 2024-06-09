@@ -1,0 +1,106 @@
+@font-face {
+	font-family: "Ethos";
+	src:
+		url("/meta/fonts/Ethos/ethos-regular-webfont.woff2") format('woff2'),
+		url("/meta/fonts/Ethos/ethos-regular-webfont.woff") format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "JetBrains Mono";
+	src:
+		url("/meta/fonts/JetBrains Mono/jetbrainsmono-variablefont_wght-webfont.woff2") format('woff2'),
+		url("/meta/fonts/JetBrains Mono/jetbrainsmono-variablefont_wght-webfont.woff") format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #eeeeee;
+	
+	color: #333333;
+	line-height: 1.4rem;
+
+	padding: 0 2rem;
+	margin: 2rem auto;
+
+	max-width: 80rem;
+}
+
+footer {
+	margin-top: 2rem;
+}
+
+a {
+	color: #1166cc;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline dotted;
+}
+a:active {
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Ethos", "Georgia", "Times New Roman", Times serif;
+	font-weight: normal;
+}
+h2 {
+	margin: 2rem 0 0.75rem;
+}
+h3 {
+	margin: 0.75rem 0;
+}
+h4 {
+	margin: 0.5rem 0;
+}
+
+#tableofcontents {
+	margin: 1rem 0;
+}
+#tableofcontents h3,
+#tableofcontents ul {
+	margin: 0.25rem 0;
+}
+
+#specification > .hierarchy {
+	padding-left: 0;
+}
+.hierarchy {
+	padding-left: 1.5rem;
+
+	list-style-type: none;
+
+	counter-reset: hierarchy;
+}
+.hierarchy {
+	padding-left: 1.5rem;
+
+	list-style-type: none;
+
+	counter-reset: hierarchy;
+}
+.hierarchy a::before,
+.hierarchy h2::before,
+.hierarchy h3::before,
+.hierarchy h4::before {
+	content: counters(hierarchy, ".", decimal) " - ";
+	counter-increment: hierarchy;
+}
+
+code {
+	background-color: #eeeeee;
+
+	font-family: "JetBrains Mono", monospace;
+	white-space: pre;
+
+	padding: 0.75rem;
+	margin: 0.5rem 0;
+
+	width: fit-content;
+
+	display: block;
+	
+	border: solid 1px #cccccc;
+}
