@@ -1,4 +1,12 @@
 @font-face {
+	font-family: "Berkeley Mono";
+	src:
+		url("/meta/fonts/Berkeley Mono/berkeley-mono-variable-2-webfont.woff2") format('woff2'),
+		url("/meta/fonts/Berkeley Mono/berkeley-mono-variable-2-webfont.woff") format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
 	font-family: "Ethos";
 	src:
 		url("/meta/fonts/Ethos/ethos-regular-webfont.woff2") format('woff2'),
@@ -11,6 +19,14 @@
 	src:
 		url("/meta/fonts/JetBrains Mono/jetbrainsmono-variablefont_wght-webfont.woff2") format('woff2'),
 		url("/meta/fonts/JetBrains Mono/jetbrainsmono-variablefont_wght-webfont.woff") format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Monteverdi";
+	src:
+		url("/meta/fonts/Monteverdi/monteverdi_ufonts.com_-webfont.woff2") format('woff2'),
+		url("/meta/fonts/Monteverdi/monteverdi_ufonts.com_-webfont.woff") format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -43,8 +59,9 @@ a:active {
 }
 
 h1, h2, h3, h4 {
-	font-family: "Ethos", "Georgia", "Times New Roman", Times serif;
+	font-family: "Berkeley Mono", "Georgia", "Times New Roman", Times serif;
 	font-weight: normal;
+	text-transform: uppercase;
 }
 h2 {
 	margin: 2rem 0 0.75rem;
